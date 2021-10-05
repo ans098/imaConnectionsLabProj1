@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500;600;700&family=Pacifico&family=Roboto&display=swap');
+
+body {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px 150px 150px 105px 25%;
+    gap: 10px;
+    justify-self: center;
+    background-color: rgb(236, 233, 233);
+    margin: 0 auto;
+}
+
+#canvasContainer {
+    display: block;
+    position: fixed;
+    z-index: -1;
+    opacity: 7%;
+    background-size: cover;
+    min-height: 100% ;
+    max-width: 975px;
+    /* min-width: 1024px; */
+    width: 100%;
+    height: auto;
+}
+
+.countryFlag {
+    height: 1px;
+    z-index: -1;
+    visibility: hidden;
+}
+
+#title {
+    grid-column: 1/span 4;
+    grid-row: 1;
+    justify-self: center;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Pacifico", script;
+}
+
+.country {
+    grid-row: 2;
+    margin-top: 70px;
+    height: 50px;
+    justify-self: center;
+    width: 10em;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#spain {
+    background-image: linear-gradient(to right, red, gold, red);
+	border: none;
+	text-align: center;
+}
+
+#spain:hover {
+	box-shadow: 2px 2px 5px grey;
+}
+
+#spain:active {
+	border: 0.5px black solid;
+}
+
+#italy {
+    background-image: linear-gradient(to right, red, white, chartreuse);
+	border: none;
+	text-align: center;
+}
+
+#italy:hover {
+	box-shadow: 2px 2px 5px grey;
+}
+
+#italy:active {
+	border: 0.5px black solid;
+}
+
+#japan {
+    grid-column: 2;
+    grid-row: 3;
+    background-image: linear-gradient(to right, white, red, white);
+	border: none;
+	text-align: center;
+}
+
+#japan:hover {
+	box-shadow: 2px 2px 5px grey;
+}
+
+#japan:active {
+	border: 0.5px black solid;
+}
+
+#germany {
+    grid-column: 3;
+    grid-row: 3;
+    background-image: linear-gradient(to right, black, red, yellow);
+    border: none;
+    text-align: center;
+}
+
+#germany:hover {
+	box-shadow: 2px 2px 5px grey;
+}
+
+#germany:active {
+	border: 0.5px black solid;
+}
+
+#france {
+    background-image: linear-gradient(to right, cornflowerblue, white, red);
+	border: none;
+	text-align: center;
+}
+
+#france:hover {
+	box-shadow: 2px 2px 5px grey;
+}
+
+#france:active {
+	border: 0.5px black solid;
+}
+
+#australia {
+    background-image: linear-gradient(to right, red, cornflowerblue, white);
+	border: none;
+	text-align: center;
+}
+
+#australia:hover {
+	box-shadow: 2px 2px 5px grey;
+}
+
+#australia:active {
+	border: 0.5px black solid;
+}
+
+#info {
+    grid-row: 4;
+    grid-column: 1/ span 3;
+    margin-left: 20px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#moreFacts {
+    grid-row: 5;
+    grid-column: 1 /span 2;
+    margin-left: 20px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#translated {
+    grid-row: 5;
+    grid-column: 3/span 2;
+    margin-left: 20px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 940px) {
+    body {
+        grid-template-columns: 33% 33% 33%;
+        justify-items: center;
+    }
+
+    #spain {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .country {
+        place-self: center;   
+    }
+
+     #info {
+        grid-column: 1/span 2;
+        grid-row: 4;
+        justify-self: start;
+     }   
+}
+
+
