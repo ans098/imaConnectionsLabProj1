@@ -173,13 +173,13 @@ window.addEventListener('load', function () {
     console.log("Page has loaded");
     //used promise.all reference from https://gomakethings.com/waiting-for-multiple-all-api-responses-to-complete-with-the-vanilla-js-promise.all-method/
     Promise.all([
-        fetch("http://api.countrylayer.com/v2/all?access_key=f2b998dba8f69b0441ab275dbe421037"),
-        fetch("http://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=a1c6dba0f93e12339dddbc57d0dc33e5"),
-        fetch("http://api.openweathermap.org/data/2.5/weather?q=Madrid&appid=a1c6dba0f93e12339dddbc57d0dc33e5"),
-        fetch("http://api.openweathermap.org/data/2.5/weather?q=Tokoyo&appid=a1c6dba0f93e12339dddbc57d0dc33e5"),
-        fetch("http://api.openweathermap.org/data/2.5/weather?q=Canberra&appid=a1c6dba0f93e12339dddbc57d0dc33e5"),
-        fetch("http://api.openweathermap.org/data/2.5/weather?q=Rome&appid=a1c6dba0f93e12339dddbc57d0dc33e5"),
-        fetch("http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=a1c6dba0f93e12339dddbc57d0dc33e5")
+        fetch("https://api.countrylayer.com/v2/all?access_key=f2b998dba8f69b0441ab275dbe421037"),
+        fetch("https://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=a1c6dba0f93e12339dddbc57d0dc33e5"),
+        fetch("https://api.openweathermap.org/data/2.5/weather?q=Madrid&appid=a1c6dba0f93e12339dddbc57d0dc33e5"),
+        fetch("https://api.openweathermap.org/data/2.5/weather?q=Tokoyo&appid=a1c6dba0f93e12339dddbc57d0dc33e5"),
+        fetch("https://api.openweathermap.org/data/2.5/weather?q=Canberra&appid=a1c6dba0f93e12339dddbc57d0dc33e5"),
+        fetch("https://api.openweathermap.org/data/2.5/weather?q=Rome&appid=a1c6dba0f93e12339dddbc57d0dc33e5"),
+        fetch("https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=a1c6dba0f93e12339dddbc57d0dc33e5")
     ])
         .then(function (responses) {
             return Promise.all(responses.map(function (response) {
