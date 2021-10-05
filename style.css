@@ -7,7 +7,7 @@ body {
     grid-template-rows: 50px 150px 150px 105px 25%;
     gap: 10px;
     justify-self: center;
-    background-color: rgb(236, 233, 233);
+    background-color:papayawhip;
     margin: 0 auto;
 }
 
@@ -37,6 +37,7 @@ body {
     padding: 10px;
     margin: 10px;
     font-family: "Pacifico", script;
+    font-size: 40px;
 }
 
 .country {
@@ -51,7 +52,7 @@ body {
 }
 
 #spain {
-    background-image: linear-gradient(to right, red, gold, red);
+    background-image: linear-gradient(to bottom, red, gold);
 	border: none;
 	text-align: center;
 }
@@ -65,7 +66,7 @@ body {
 }
 
 #italy {
-    background-image: linear-gradient(to right, red, white, chartreuse);
+    background-image: linear-gradient(to bottom, chartreuse, white);
 	border: none;
 	text-align: center;
 }
@@ -81,7 +82,7 @@ body {
 #japan {
     grid-column: 2;
     grid-row: 3;
-    background-image: linear-gradient(to right, white, red, white);
+    background-image: linear-gradient(to bottom, red, white);
 	border: none;
 	text-align: center;
 }
@@ -97,7 +98,7 @@ body {
 #germany {
     grid-column: 3;
     grid-row: 3;
-    background-image: linear-gradient(to right, black, red, yellow);
+    background-image: linear-gradient(to bottom, slategrey, red);
     border: none;
     text-align: center;
 }
@@ -111,7 +112,7 @@ body {
 }
 
 #france {
-    background-image: linear-gradient(to right, cornflowerblue, white, red);
+    background-image: linear-gradient(to bottom, cornflowerblue, white);
 	border: none;
 	text-align: center;
 }
@@ -125,7 +126,7 @@ body {
 }
 
 #australia {
-    background-image: linear-gradient(to right, red, cornflowerblue, white);
+    background-image: linear-gradient(to bottom, red, cornflowerblue);
 	border: none;
 	text-align: center;
 }
